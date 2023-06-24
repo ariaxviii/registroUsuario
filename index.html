@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/Isotipo.png" />
+    <title>Registro_InicioDeSesión</title>
+  </head>
+
+  <body class="container">
+    <nav>
+      <div class="navbar">
+        <div class="navbar__logo">
+          <img src="./img/Imagotipo.png" alt="Logo" />
+        </div>
+
+        <ul class="navbar__menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-poll-h"></i>
+              <span class="nav-item">Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-dog"></i>
+              <span class="nav-item">Perro</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cat"></i>
+              <span class="nav-item">Gato</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-bone"></i>
+              <span class="nav-item">Productos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-briefcase-medical"></i>
+              <span class="nav-item">Servicios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-alt"></i>
+              <span class="nav-item">Blog</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fas fa-user-friends"></i>
+              <span class="nav-item">Nosotros</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!------------inicio de sesión de usuarios------------>
+      <section class="main m-3">
+        <div class="main-top">
+          <h2>Iniciar Sesión</h2>
+        </div>
+        <form id="loginForm" class="row g-3 contedor-formulario">
+          <div class="col-6">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="loginEmail"
+              placeholder="name@example.com"
+              name="Email"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="loginPassword" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="loginPassword"
+              placeholder="contraseña"
+              name="Contraseña"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn button-formulario">
+              Iniciar Sesión
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!------------registro de usuarios------------>
+      <section class="main m-3">
+        <div class="main-top">
+          <h2 style="margin-top: 60px">Registro de Usuarios</h2>
+        </div>
+
+        <form id="registrationForm" class="row g-3 contedor-formulario">
+          <div class="col-6">
+            <label for="nombreInput" class="form-label">Nombre Completo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombreInput"
+              placeholder="escribe tu nombre y apellido"
+              pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
+              name="nombre"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="telefonoInput" class="form-label">Teléfono</label>
+            <input
+              type="number"
+              class="form-control"
+              id="telefonoInput"
+              placeholder="teléfono"
+              name="teléfono"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="emailInput" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              placeholder="name@example.com"
+              name="Email"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="emailInput" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="contraseñaInput"
+              placeholder="escribe una contraseña"
+              name="Contraseña"
+              required
+            />
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <label for="terms" class="form-check-label"
+                >He leído y acepto
+                <a class="terminosCondiciones" href="#"
+                  >el tratamiento de mis datos personales.
+                </a>
+              </label>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="terms"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <button
+              id="btnSaveUser"
+              type="submit"
+              class="btn button-formulario"
+            >
+              Registrar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="users.js"></script>
+  </body>
+</html>
